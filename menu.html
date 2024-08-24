@@ -156,19 +156,19 @@
 
         }
 
-        /* Popup Background */
+     
 .popup {
-    display: none; /* Hidden by default */
+    display: none;  
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    z-index: 9999; /* Ensure it appears above all other content */
+    background-color: rgba(0, 0, 0, 0.5);  
+    z-index: 9999;  
 }
 
-/* Popup Content */
+ 
 .popup-content {
     position: absolute;
     top: 50%;
@@ -183,7 +183,7 @@
     animation: popupSlideIn 0.5s ease; /* Slide-in animation */
 }
 
-/* Input Field */
+ 
 #table-number-input {
     width: 80%;
     padding: 10px;
@@ -191,7 +191,7 @@
     font-size: 16px;
 }
 
-/* Submit Button */
+ 
 #submit-table-number {
     margin-top: 20px;
     padding: 10px 20px;
@@ -203,7 +203,7 @@
     cursor: pointer;
 }
 
-/* Animation */
+ 
 @keyframes popupSlideIn {
     from {
         transform: translate(-50%, -60%);
@@ -235,10 +235,10 @@
         <a href="receipt.html" onclick="saveToLocalStorage()">Checkout</a>
     </div>
     <div class="container">
-        <!-- Vegetarian Section -->
+        
         <div id="vegetarian" class="menu-section">
             <div class="menu-header">Vegetarian</div>
-            <!-- Vegetarian items -->
+         
             <div class="menu-item" data-name="Veg Burger" data-price="150">
                 <img src="burger.jpeg" alt="Veg Burger">
                 <div>
@@ -332,10 +332,10 @@
             </div>
         </div>
 
-        <!-- Non-Vegetarian Section -->
+   
         <div id="non-veg" class="menu-section">
             <div class="menu-header">Non-Vegetarian</div>
-            <!-- Non-Vegetarian items -->
+           
             <div class="menu-item" data-name="Chicken Burger" data-price="200">
                 <img src="chickenburg.jpeg" alt="Chicken Burger">
                 <div>
@@ -429,10 +429,10 @@
             </div>
         </div>
 
-        <!-- Drinks Section -->
+
         <div id="drinks" class="menu-section">
             <div class="menu-header">Drinks</div>
-            <!-- Drinks items -->
+
             <div class="menu-item" data-name="Coke" data-price="60">
                 <img src="coca.jpeg" alt="Coke">
                 <div>
@@ -580,10 +580,9 @@
         var tableNumber = document.getElementById('table-number-input').value;
         
         if (tableNumber) {
-            // Store table number in localStorage or send it to server
+        
             localStorage.setItem('tableNumber', tableNumber);
 
-            // Close the popup
             popup.style.display = 'none';
         } else {
             alert('Please enter a valid table number');
