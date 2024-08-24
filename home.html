@@ -329,7 +329,7 @@
         <p>Our design philosophy is rooted in creating experiences that are both beautiful and functional. From the use of gradients and animations to ensuring mobile compatibility, every element is crafted to perfection.</p>
         <div class="design-features">
             <div class="feature-item">
-                <h3>Modern Aesthetics</h></h3>
+                <h3>Modern Aesthetics</h3>
                 <p>We embrace clean lines, minimalist design, and the strategic use of gradients to create visually stunning pages.</p>
             </div>
             <div class="feature-item">
@@ -344,10 +344,9 @@
     </section>
 
     <!-- Dark Mode and Sound Toggle Buttons -->
-]
+    <button class="dark-mode-toggle">Menu</button>
     <button class="sound-toggle">Play Sound</button>
     <button class="pause-toggle">Pause Sound</button>
-
     <audio id="background-music" loop>
         <source src="music1.mp3" type="audio/mp3">
         Your browser does not support the audio element.
@@ -356,17 +355,12 @@
     <script>
         // Dark Mode Toggle
         const toggleDarkMode = () => {
-            document.body.classList.toggle('dark-mode');
+            window.open("menu.html");
         };
         document.querySelector('.dark-mode-toggle').addEventListener('click', toggleDarkMode);
 
         // Sound Play and Pause
         const backgroundMusic = document.getElementById('background-music');
-
-        // Play music automatically when the page loads
-        window.addEventListener('load', () => {
-            backgroundMusic.play();
-        });
 
         document.querySelector('.sound-toggle').addEventListener('click', () => {
             backgroundMusic.play();
