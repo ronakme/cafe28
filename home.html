@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafe28</title>
     <style>
-        /* Reset */
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* Body Styling */
         body {
             font-family: 'Poppins', sans-serif;
             background: url('hero-background.jpg') no-repeat center center/cover;
@@ -22,13 +21,13 @@
             transition: background-color 0.3s ease, color 0.3s ease;
         }
 
-        /* Dark Mode Styling */
+
         body.dark-mode {
             background-color: #1a1a1a;
             color: #e5e5e5;
         }
 
-        /* Hero Section */
+
         .hero-section {
             height: 100vh;
             background: url('nigga2.jpeg') no-repeat center center/cover;
@@ -85,7 +84,7 @@
             transform: translateY(-5px);
         }
 
-        /* Featured Menu Section */
+
         .featured-menu-section {
             text-align: center;
             padding: 80px 20px;
@@ -146,7 +145,7 @@
             color: #ff914d;
         }
 
-        /* Design Tips Section */
+
         .design-tips-section {
             text-align: center;
             padding: 80px 20px;
@@ -325,25 +324,25 @@
     </section>
 
     <section class="design-tips-section">
-        <h2>Elevate Your Web Design</h2>
-        <p>Our design philosophy is rooted in creating experiences that are both beautiful and functional. From the use of gradients and animations to ensuring mobile compatibility, every element is crafted to perfection.</p>
+        <h2>Why Choose Cafe28?</h2>
+        <p>At Cafe28, we pride ourselves on offering not only the finest culinary experiences but also a captivating atmosphere. Discover the reasons why our design sets the mood for an unforgettable dining experience.</p>
         <div class="design-features">
             <div class="feature-item">
-                <h3>Modern Aesthetics</h3>
-                <p>We embrace clean lines, minimalist design, and the strategic use of gradients to create visually stunning pages.</p>
+                <h3>Warm Ambiance</h3>
+                <p>Our cafe offers a soothing, relaxing environment perfect for casual meetings or solo moments of tranquility.</p>
             </div>
             <div class="feature-item">
-                <h3>Responsive Design</h3>
-                <p>Our layouts are fully responsive, ensuring your content looks great on any device, from desktops to smartphones.</p>
+                <h3>Locally Sourced</h3>
+                <p>OWe proudly source local ingredients to create delightful food and beverages that support our community.</p>
             </div>
             <div class="feature-item">
-                <h3>Engaging Animations</h3>
-                <p>Subtle animations bring your content to life, enhancing user engagement without overwhelming the experience.</p>
+                <h3>Sustainability</h3>
+                <p>We prioritize sustainability by using eco-friendly products and practices in our day-to-day operations.</p>
             </div>
         </div>
     </section>
 
-    <!-- Dark Mode and Sound Toggle Buttons -->
+    
     <button class="dark-mode-toggle">Menu</button>
     <button class="sound-toggle">Play Sound</button>
     <button class="pause-toggle">Pause Sound</button>
@@ -353,13 +352,13 @@
     </audio>
 
     <script>
-        // Dark Mode Toggle
+
         const toggleDarkMode = () => {
             window.open("menu.html");
         };
         document.querySelector('.dark-mode-toggle').addEventListener('click', toggleDarkMode);
 
-        // Sound Play and Pause
+
         const backgroundMusic = document.getElementById('background-music');
 
         document.querySelector('.sound-toggle').addEventListener('click', () => {
